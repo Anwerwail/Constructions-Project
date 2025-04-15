@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مواد البناء الحديثة</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">بناء<span>كو</span></a>
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">الرئيسية</a></li>
+                <li><a href="pages/sustainable.html">مواد مستدامة</a></li>
+                <li><a href="pages/materials.html">المواد المتجانسة</a></li>
+                <li><a href="pages/concrete.html">أنواع الخرسانة</a></li>
+                <li><a href="pages/standards.html">معايير الاختيار</a></li>
+                <li><a href="pages/challenges.html">التحديات</a></li>
+                <li><button id="theme-toggle" aria-label="تبديل الوضع الداكن">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة الرئيسية -->
+    <main class="container">
+        <section class="hero">
+            <h1>مواد البناء الحديثة والمستدامة</h1>
+            <p>اكتشف أحدث المواد والتقنيات في عالم البناء والتشييد</p>
+            <a href="#calculator" class="btn" data-scroll>جرب الآلة الحاسبة</a>
+        </section>
+
+        <section class="intro-section">
+            <h2>أهمية مواد البناء المناسبة</h2>
+            <p>تعتبر مواد البناء الأساس الذي تقوم عليه أي مشاريع إنشائية، حيث تؤثر بشكل مباشر على متانة المبنى، كفاءته الطاقةية، وتكلفته الإجمالية. مع تطور التقنيات، ظهرت العديد من المواد الحديثة التي توفر حلولاً مبتكرة لتحديات البناء التقليدية.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-leaf"></i>
+                    <h3>الاستدامة</h3>
+                    <p>مواد صديقة للبيئة تقلل من البصمة الكربونية للمباني</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>المتانة</h3>
+                    <p>مواد بناء عالية الجودة تتحمل الظروف المناخية القاسية</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-coins"></i>
+                    <h3>التكلفة</h3>
+                    <p>خيارات متنوعة تناسب مختلف الميزانيات</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم الآلة الحاسبة -->
+        <!-- في ملف index.html -->
+        <section id="calculator" class="calculator-section">
+            <div class="container">
+                <h2><i class="fas fa-calculator"></i> حاسبة مواد البناء الجزائرية</h2>
+                <p class="subtitle">أداة متكاملة لحساب كميات المواد والتكاليف بدقة</p>
+        
+                <div class="calculator-wrapper">
+                    <!-- الخطوة 1: معلومات أساسية -->
+                    <div class="calculator-step active" data-step="1">
+                        <div class="step-header">
+                            <span class="step-number">1</span>
+                            <h3>المعلومات الأساسية</h3>
+                        </div>
+                        
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="project-type"><i class="fas fa-building"></i> نوع المشروع:</label>
+                                <select id="project-type" class="form-control" required>
+                                    <option value="" disabled selected>اختر نوع المشروع</option>
+                                    <option value="residential">سكني (منزل/شقة)</option>
+                                    <option value="villa">فيلا</option>
+                                    <option value="commercial">تجاري (محل/مكتب)</option>
+                                    <option value="apartment">عمارة سكنية</option>
+                                </select>
+                                <p class="help-text">اختر النوع الأقرب لمشروعك</p>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="area"><i class="fas fa-ruler-combined"></i> المساحة الإجمالية (م²):</label>
+                                <input type="number" id="area" class="form-control" min="50" max="2000" required>
+                                <p class="help-text">المساحة الأرضية للطابق الواحد</p>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="floors"><i class="fas fa-layer-group"></i> عدد الطوابق:</label>
+                                <input type="number" id="floors" class="form-control" min="1" max="20" value="1" required>
+                            </div>
+        
+                            <div class="form-group">
+                                <label for="height"><i class="fas fa-arrows-alt-v"></i> ارتفاع الطابق (م):</label>
+                                <select id="height" class="form-control" required>
+                                    <option value="2.7">2.7 (قياسي)</option>
+                                    <option value="3.0">3.0 (فيلات)</option>
+                                    <option value="3.5">3.5 (تجاري)</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <button class="btn next-btn">التالي <i class="fas fa-arrow-left"></i></button>
+                    </div>
+        
+                    <!-- الخطوة 2: تفاصيل البناء -->
+                    <div class="calculator-step" data-step="2">
+                        <div class="step-header">
+                            <span class="step-number">2</span>
+                            <h3>تفاصيل البناء</h3>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label><i class="fas fa-chess-board"></i> نوع الهيكل الإنشائي:</label>
+                            <div class="construction-types">
+                                <!-- الخيار 1 -->
+                                <div class="type-card" data-type="concrete">
+                                    <input type="radio" name="construction-type" id="type-concrete" value="concrete" checked>
+                                    <label for="type-concrete">
+                                        <img src="images/concrete-structure.png" alt="هيكل خرساني (Concrete Structure)">
+                                        <h4>خرساني تقليدي</h4>
+                                        <ul class="type-features">
+                                            <li>أعمدة وبلاطات خرسانية</li>
+                                            <li>جدران طوب أحمر</li>
+                                            <li>الأكثر شيوعاً</li>
+                                        </ul>
+                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                    </label>
+                                </div>
+                                
+                                <!-- الخيار 2 -->
+                                <div class="type-card" data-type="steel">
+                                    <input type="radio" name="construction-type" id="type-steel" value="steel">
+                                    <label for="type-steel">
+                                        <img src="images/steel-structure.jpg" alt="هيكل معدني (Steel Structure)">
+                                        <h4>هيكل معدني</h4>
+                                        <ul class="type-features">
+                                            <li>أعمدة وكمرات حديدية</li>
+                                            <li>أسرع في التنفيذ</li>
+                                            <li>تكلفة أعلى</li>
+                                        </ul>
+                                        <div class="check-icon"><i class="fas fa-check"></i></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="quality"><i class="fas fa-star"></i> جودة المواد:</label>
+                            <select id="quality" class="form-control" required>
+                                <option value="standard">قياسي (متوسط الجودة)</option>
+                                <option value="premium">فاخر (مواد عالية الجودة)</option>
+                                <option value="economic">اقتصادي (أقل تكلفة)</option>
+                            </select>
+                        </div>
+        
+                        <div class="step-buttons">
+                            <button class="btn prev-btn"><i class="fas fa-arrow-right"></i> السابق</button>
+                            <button class="btn next-btn">التالي <i class="fas fa-arrow-left"></i></button>
+                        </div>
+                    </div>
+        
+                    <!-- الخطوة 3: النتائج -->
+                    <div class="calculator-step" data-step="3">
+                        <div class="step-header">
+                            <span class="step-number">3</span>
+                            <h3>النتائج المفصلة</h3>
+                        </div>
+                        
+                        <div class="project-summary-card">
+                            <h4><i class="fas fa-info-circle"></i> ملخص المشروع:</h4>
+                            <div class="summary-details">
+                                <div class="summary-item">
+                                    <span>نوع المشروع:</span>
+                                    <strong id="summary-type">-</strong>
+                                </div>
+                                <div class="summary-item">
+                                    <span>المساحة الإجمالية:</span>
+                                    <strong id="summary-area">-</strong>
+                                </div>
+                                <div class="summary-item">
+                                    <span>نوع الهيكل:</span>
+                                    <strong id="summary-structure">-</strong>
+                                </div>
+                                <div class="summary-item">
+                                    <span>جودة المواد:</span>
+                                    <strong id="summary-quality">-</strong>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="results-section">
+                            <h4><i class="fas fa-cubes"></i> الكميات المطلوبة:</h4>
+                            
+                            <div class="material-cards">
+                                <!-- الإسمنت -->
+                                <div class="material-card">
+                                    <img src="images/cement-dz.jpg" alt="إسمنت (Cement)">
+                                    <div class="material-details">
+                                        <h5>الإسمنت</h5>
+                                        <div class="material-result">
+                                            <span id="cement-result">0</span>
+                                            <small>كيس (50 كجم)</small>
+                                        </div>
+                                        <div class="material-price">
+                                            <span id="cement-price">0</span>
+                                            <small>دينار جزائري</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- الحديد -->
+                                <div class="material-card">
+                                    <img src="images/steel-dz.jpg" alt="حديد تسليح (Reinforcement Steel)">
+                                    <div class="material-details">
+                                        <h5>حديد التسليح</h5>
+                                        <div class="material-result">
+                                            <span id="steel-result">0</span>
+                                            <small>طن</small>
+                                        </div>
+                                        <div class="material-price">
+                                            <span id="steel-price">0</span>
+                                            <small>دينار جزائري</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- الرمل -->
+                                <div class="material-card">
+                                    <img src="images/sand-dz.webp" alt="رمل بناء (Construction Sand)">
+                                    <div class="material-details">
+                                        <h5>الرمل</h5>
+                                        <div class="material-result">
+                                            <span id="sand-result">0</span>
+                                            <small>م³</small>
+                                        </div>
+                                        <div class="material-price">
+                                            <span id="sand-price">0</span>
+                                            <small>دينار جزائري</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- الطوب -->
+                                <div class="material-card">
+                                    <img src="images/bricks-dz.png" alt="طوب بناء (Building Bricks)">
+                                    <div class="material-details">
+                                        <h5>الطوب</h5>
+                                        <div class="material-result">
+                                            <span id="bricks-result">0</span>
+                                            <small>قطعة</small>
+                                        </div>
+                                        <div class="material-price">
+                                            <span id="bricks-price">0</span>
+                                            <small>دينار جزائري</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="total-cost-card">
+                            <h4><i class="fas fa-coins"></i> التكلفة الإجمالية:</h4>
+                            <div class="total-amount">
+                                <span id="total-cost">0</span>
+                                <small>دينار جزائري</small>
+                            </div>
+                            <div class="cost-details">
+                                <div class="cost-item">
+                                    <span>مواد أساسية:</span>
+                                    <span id="basic-materials-cost">0 دج</span>
+                                </div>
+                                <div class="cost-item">
+                                    <span>مواد فرعية:</span>
+                                    <span id="secondary-materials-cost">0 دج</span>
+                                </div>
+                                <div class="cost-item">
+                                    <span>نقل وتشغيل:</span>
+                                    <span id="transport-cost">0 دج</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="step-buttons">
+                            <button class="btn prev-btn"><i class="fas fa-arrow-right"></i> السابق</button>
+                            <button class="btn print-btn"><i class="fas fa-print"></i> طباعة النتائج</button>
+                            <button class="btn reset-btn"><i class="fas fa-redo"></i> بدء حساب جديد</button>
+                        </div>
+        
+                        <div class="disclaimer">
+                            <h5><i class="fas fa-exclamation-triangle"></i> ملاحظات هامة:</h5>
+                            <ul>
+                                <li>هذه النتائج تقديرية وقد تختلف حسب المنطقة والمقاول.</li>
+                                <li>الأسعار حسب متوسط السوق الجزائري لشهر <span id="current-month"></span>.</li>
+                                <li>لحساب دقيق أكثر، يرجى استشارة مهندس مدني.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <h2>آراء العملاء</h2>
+            <div class="testimonial-card">
+                <p>"استخدام المواد المستدامة في مشروعي كان قراراً صائباً. لقد لاحظت فرقاً كبيراً في فواتير الطاقة!"</p>
+                <cite>- أحمد، مهندس معماري</cite>
+            </div>
+            <div class="testimonial-card">
+                <p>"الموقع يوفر معلومات شاملة وسهلة الفهم حول مواد البناء. أنصح الجميع بزيارته!"</p>
+                <cite>- سارة، مقاول</cite>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>مصدر متكامل لمعرفة كل ما يخص مواد البناء الحديثة والتقليدية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="pages/sustainable.html">المواد المستدامة</a></li>
+                        <li><a href="#calculator">الآلة الحاسبة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <p>anwerwaildz05@gmail.com</p>
+                    <p>0671019887</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025   مواد البناء الحديثة. جميع الحقوق محفوظة. مباركية وائل انور & مهديوي احمد ياسين </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

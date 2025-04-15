@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معايير اختيار مواد البناء | بناءكو</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">بناء<span>كو</span></a>
+            <button class="menu-toggle" aria-label="فتح القائمة">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="sustainable.html">مواد مستدامة</a></li>
+                <li><a href="materials.html">المواد المتجانسة</a></li>
+                <li><a href="concrete.html">أنواع الخرسانة</a></li>
+                <li><a href="standards.html" class="active">معايير الاختيار</a></li>
+                <li><a href="challenges.html">التحديات</a></li>
+                <li><button id="theme-toggle" aria-label="تبديل الوضع الداكن">
+                    <i class="fas fa-moon"></i>
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- محتوى الصفحة -->
+    <main class="container">
+        <section class="page-header">
+            <h1>معايير اختيار مواد البناء المناسبة</h1>
+            <p>دليل عملي لاختيار أفضل المواد لمشروعك</p>
+        </section>
+
+        <section class="criteria-section">
+            <h2>المعايير الأساسية لاختيار مواد البناء</h2>
+            
+            <div class="criterion-card">
+                <i class="fas fa-weight-hanging"></i>
+                <h3>المتانة والقوة</h3>
+                <p>قدرة المادة على مقاومة الأحمال والعوامل الجوية دون تلف. تقاس بقوة الضغط والشد ومقاومة التآكل.</p>
+                <div class="rating-example">
+                    <span>التقييم:</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+                        <span>3.5/5 للخرسانة العادية</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="criterion-card">
+                <i class="fas fa-temperature-low"></i>
+                <h3>العزل الحراري</h3>
+                <p>قدرة المادة على تقليل انتقال الحرارة، مما يقلل من استهلاك الطاقة للتبريد أو التدفئة.</p>
+                <div class="rating-example">
+                    <span>التقييم:</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                        <span>4/5 للطوب الأحمر</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="criterion-card">
+                <i class="fas fa-wallet"></i>
+                <h3>التكلفة</h3>
+                <p>لا تشمل فقط سعر الشراء ولكن تكاليف التركيب، الصيانة، والعمر الافتراضي.</p>
+                <div class="rating-example">
+                    <span>التقييم:</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>5/5 للخرسانة من حيث التكلفة/الأداء</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="criterion-card">
+                <i class="fas fa-leaf"></i>
+                <h3>الاستدامة</h3>
+                <p>مدى صداقة المادة للبيئة من حيث مصادر المواد، الطاقة المستخدمة في الإنتاج، وإمكانية إعادة التدوير.</p>
+                <div class="rating-example">
+                    <span>التقييم:</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                        <span>3/5 للخرسانة التقليدية</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="decision-matrix">
+            <h2>مصفوفة قرار اختيار مواد البناء</h2>
+            <p>استخدم هذه الأداة البسيطة لمقارنة المواد المختلفة حسب أولويات مشروعك:</p>
+            
+            <div class="matrix-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>المعيار</th>
+                            <th>الأهمية (1-5)</th>
+                            <th>الخرسانة</th>
+                            <th>الطوب</th>
+                            <th>الحديد</th>
+                            <th>الخشب</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>المتانة</td>
+                            <td><input type="number" min="1" max="5" value="5" class="importance-input"></td>
+                            <td>5</td>
+                            <td>4</td>
+                            <td>5</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>التكلفة</td>
+                            <td><input type="number" min="1" max="5" value="4" class="importance-input"></td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>العزل الحراري</td>
+                            <td><input type="number" min="1" max="5" value="3" class="importance-input"></td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>1</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>الاستدامة</td>
+                            <td><input type="number" min="1" max="5" value="3" class="importance-input"></td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="calculate-matrix" class="btn">حساب أفضل مادة</button>
+                <div id="matrix-result" class="result-box"></div>
+            </div>
+        </section>
+
+        <section class="regional-considerations">
+            <h2>اعتبارات حسب المنطقة الجغرافية</h2>
+            <div class="region-card">
+                <h3>المناطق الساحلية</h3>
+                <p>يفضل استخدام مواد مقاومة للملوحة مثل الخرسانة المقاومة للكبريتات والطلاءات الواقية للحديد.</p>
+            </div>
+            <div class="region-card">
+                <h3>المناطق الصحراوية</h3>
+                <p>التركيز على المواد ذات العزل الحراري الجيد مثل الطوب الأحمر أو الخرسانة الخفيفة.</p>
+            </div>
+            <div class="region-card">
+                <h3>المناطق الجبلية</h3>
+                <p>مواد خفيفة الوزن لتقليل أحمال الزلازل، مع متانة ضد الرياح القوية.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>مصدر متكامل لمعرفة كل ما يخص مواد البناء الحديثة والتقليدية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="sustainable.html">المواد المستدامة</a></li>
+                        <li><a href="../index.html#calculator">الآلة الحاسبة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>اتصل بنا</h3>
+                    <p>anwerwaildz05@gmail.com</p>
+                    <p>0671019887</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025   مواد البناء الحديثة. جميع الحقوق محفوظة. مباركية وائل انور & مهديوي احمد ياسين </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
